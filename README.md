@@ -8,7 +8,7 @@ This is an example of [Reversi](https://en.wikipedia.org/wiki/Reversi) game in [
 
 # Installation
 
-You only need to install Java SE and Java Fx. read [this](https://openjfx.io/openjfx-docs/)
+You only need to install Java SE and Java Fx. Read [this](https://openjfx.io/openjfx-docs/)
 
 # Usage
-For play with computer, Select auto mode in new game windos
+For play with computer, Select auto mode in new game window
