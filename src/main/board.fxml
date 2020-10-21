@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.TilePane?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.121" fx:controller="main.Board"
+            >
+    <top>
+        <Label fx:id="topTxt" text="       A          B           C          D           E           F           G           H         "/>
+    </top>
+    <left>
+        <VBox>
+            <HBox>
+                <VBox spacing="25" fx:id="leftTxt">
+                    <Label text="  1  " style="-fx-text-fill: white"/>
+                    <Label text="  2  " style="-fx-text-fill: white"/>
+                    <Label text="  3  " style="-fx-text-fill: white"/>
+                    <Label text="  4  " style="-fx-text-fill: white"/>
+                    <Label text="  5  " style="-fx-text-fill: white"/>
+                    <Label text="  6  " style="-fx-text-fill: white"/>
+                    <Label text="  7  " style="-fx-text-fill: white"/>
+                    <Label text="  8  " style="-fx-text-fill: white"/>
+                </VBox>
+                <TilePane fx:id="squares" prefColumns="8" prefRows="8"
+                          prefHeight="320" prefWidth="320"
+                >
+                </TilePane>
+                <VBox  fx:id="rightTxt">
+                    <Text text="      "/>
+                </VBox>
+            </HBox>
+            <Label fx:id="bottomTxt" text="                                                                                                             "/>
+        </VBox>
+    </left>
+    <right>
+        <VBox spacing="25">
+            <Button text="New Game" fx:id="newGameBtn"/>
+            <CheckBox text="new win" fx:id="newWin" />
+            <BorderPane.margin>
+                <Insets right="10" left="10"/>
+            </BorderPane.margin>
+            <VBox spacing="10">
+                <Text text="Black: "/>
+                <Text fx:id="blkScore" text="2 _ 50%"/>
+            </VBox>
+            <VBox spacing="10">
+                <Text text="White: "/>
+                <Text fx:id="whtScore" text="2 _ 50%"/>
+            </VBox>
+            <VBox spacing="70">
+                <Label fx:id="status" text="Black" BorderPane.alignment="CENTER"/>
+            </VBox>
+        </VBox>
+    </right>
+    <bottom>
+
+    </bottom>
+</BorderPane>
