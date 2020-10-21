@@ -1,1 +1,12 @@
 # Reversi-JavaFx
+
+This is an example of [Reversi](https://en.wikipedia.org/wiki/Reversi) game in [JavaFX](https://openjfx.io) that also has the ability to play with computer (Automatic mode in new game).
+
+## Screen Shot
+
+![Screen Shot](https://github.com/ali449/Reversi-JavaFx/blob/main/r1.png?raw=true)
+
+## Installation
+
+You only need to install Java SE and Java Fx. read [this](https://openjfx.io/openjfx-docs/)
+
